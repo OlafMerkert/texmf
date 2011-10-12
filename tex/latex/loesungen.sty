@@ -1,0 +1,148 @@
+%% Package für gemeinsame Kommandos und Einstellungen für Übungsblätter
+
+% Lade wichtige Umgebungen
+\usepackage[utf8]{inputenc}
+\usepackage[dvips]{geometry}
+\usepackage[dvips]{hyperref}
+
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{bbm,dsfont}
+
+\usepackage{xspace}
+
+% \usepackage{mathabx} % liefert \notdivides
+\newcommand{\divides}{\,|\,}
+\newcommand{\notdivides}{\,\nmid\,}
+
+\usepackage{enumerate} % Option für enumerate um einfach römische
+                       % Nummerierung etc zu erzielen
+
+\usepackage{graphicx}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{}
+\chead{}
+\rhead{\textit{Olaf~Merkert}, \today}
+
+\lfoot{}
+\cfoot{\thepage}
+\rfoot{}
+
+\newcommand{\loesung}[2]{%
+  \title{#1 -- Serie #2}%
+  \lhead{\textsc{#1} -- Serie #2}%
+}
+\author{Olaf~Merkert}
+
+
+% Gliederung nach Aufgaben
+\newcounter{aufgaben}
+\newcounter{teilaufgaben}[aufgaben]
+
+\newenvironment{aufgabe}{%
+  \stepcounter{aufgaben}%
+  \subsection*{Aufgabe \arabic{aufgaben}}%
+}{%
+}
+
+\newenvironment{teilaufgabe}{%
+  \stepcounter{teilaufgaben}%
+  \noindent \textbf{(\alph{teilaufgaben})} \hspace{1mm}%
+}{\par\medskip}
+
+% Mehrere Schritte
+\newcounter{schritt}
+\newcommand{\schrittneu}{\setcounter{schritt}{0}}
+\newcommand{\schritt}{%
+  \stepcounter{schritt} %
+  \noindent %
+  \textit{(\arabic{schritt})~} %
+  }
+
+% Zu Zeigen
+\newcommand{\zz}[1]{\stackrel{\text{zz}}{#1}}
+
+% Sätze, Definitionen etc
+\newtheorem{beh}{Behauptung}
+\newtheorem*{beh*}{Behauptung}
+\newtheorem{prop}[beh]{Proposition}
+\newtheorem{satz}{Satz}
+\newtheorem{lemma}{Lemma}
+\newtheorem{korr}{Korrolar}
+\theoremstyle{definition}
+\newtheorem{defi}{Definition}
+\theoremstyle{remark}
+\newtheorem{bem}{Bemerkung}
+
+% Vollstaendige Induktion
+\newcommand{\indanfang}{\noindent \textbf{Ind.Anf.:}}
+\newcommand{\indschritt}{\noindent \textbf{Ind.Schr.:}}
+
+% Mengensymbole
+\newcommand{\N}{\ensuremath\mathbbm{N}}
+\newcommand{\Z}{\ensuremath\mathbbm{Z}}
+\newcommand{\Q}{\ensuremath\mathbbm{Q}}
+\renewcommand{\P}{\ensuremath\mathbbm{P}}
+\newcommand{\R}{\ensuremath\mathbbm{R}}
+\newcommand{\C}{\ensuremath\mathbbm{C}}
+\newcommand{\F}{\ensuremath\mathbbm{F}}
+
+% Mengentheoretische Abk.
+\newcommand{\mengekard}[1]{\left| \left\{ #1 \right\} \right|}
+\newcommand{\folge}[2]{\left( #1 \right)_{ #2 }}
+
+% Zahlentheoretische Notationen
+\newcommand{\ggt}[1]{\ensuremath\mathrm{ggT}\left( #1 \right)}
+\newcommand{\kgv}[1]{\ensuremath\mathrm{kgV}\left( #1 \right)}
+\renewcommand{\mod}[1]{\ensuremath\;\left(\mathrm{mod}\, #1\right)}
+
+% Gruppentheorie
+\newcommand{\ord}{\ensuremath\mathrm{ord}}
+\newcommand{\Id}{\mathrm{Id}}
+\newcommand{\iso}{\cong}
+\newcommand{\inv}[1]{{#1}^{-1}}
+
+% Lineare Algebra
+\newcommand{\tr}{\mathrm{Spur}}
+\newcommand{\T}[1]{#1^t}
+\newcommand{\adj}[1]{A^\sharp}
+\newcommand{\GL}{\mathrm{GL}}
+\newcommand{\Mat}{\mathrm{Mat}}
+\newcommand{\scprod}[2]{\left\langle #1, #2 \right\rangle}
+
+% Algebra
+\newcommand{\Spec}{\mathrm{Spec}\,}
+\newcommand{\ideal}[1]{\mathcal{#1}}
+\newcommand{\primeideal}[1]{\mathfrak{#1}}
+\newcommand{\Nil}[1]{\mathrm{Nil}\left(#1\right)}
+
+\newcommand{\kernel}{\mathrm{ker}\,}
+\newcommand{\image}{\mathrm{Bild}\,}
+
+% Landau Symbole
+\renewcommand{\O}{\mathcal{O}}
+
+% Differentialrechnung
+\newcommand{\Dif}{\mathrm{D}}
+\newcommand{\D}[2]{\left(\mathrm{D} #1\right)_{#2}}
+\newcommand{\dif}{\mathrm{d}}
+\newcommand{\pdif}{\partial}
+\newcommand{\diff}[1]{\frac{\dif}{\dif #1}\,}
+\newcommand{\pdiff}[1]{\frac{\pdif}{\pdif #1}\,}
+
+% Wahrscheinlichkeit
+\renewcommand{\Pr}[1]{\ensuremath{\mathrm{P}\left[#1\right]}}
+\newcommand{\bPr}[2]{\ensuremath{\mathrm{P}\left[#1 \left| #2 \right.\right]}}
+
+% Komplexe Zahlen
+\newcommand{\e}{\mathbf{e}}
+\renewcommand{\i}{\mathfrak{i}}
+\renewcommand{\Re}{\mathrm{Re}\,}
+\renewcommand{\Im}{\mathrm{Im}\,}
+
+% Runden und Normen
+\newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}
+\newcommand{\abs}[1]{\left\lvert #1 \right\rvert}
+\newcommand{\norm}[1]{\left\lVert #1 \right\rVert}
+
