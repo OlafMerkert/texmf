@@ -1,0 +1,3 @@
+viewer_pdf = (okular %s) &
+viewer_ps = (okular %s) &
+viewer_dvi = (okular %s) &
