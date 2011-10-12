@@ -1,0 +1,82 @@
+\usepackage{olbase}
+
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{bbm,dsfont}
+
+\usepackage{cancel} % Durchstreichen
+
+% Kürzen
+\newcommand{\strike}[1]{\xcancel{#1}}
+
+% Beweise
+\newcommand{\rprove}{\noindent $[\Rightarrow]$}
+\newcommand{\lprove}{\noindent $[\Leftarrow]$}
+\newcommand{\contra}{\textbf{W!}}
+
+
+% Wichtige Mengen
+\newcommand{\N}{\ensuremath\mathbbm{N}}
+\newcommand{\Z}{\ensuremath\mathbbm{Z}}
+\newcommand{\Q}{\ensuremath\mathbbm{Q}}
+\renewcommand{\P}{\ensuremath\mathbbm{P}}
+\newcommand{\R}{\ensuremath\mathbbm{R}}
+\newcommand{\C}{\ensuremath\mathbbm{C}}
+\newcommand{\F}{\ensuremath\mathbbm{F}}
+
+
+% Abbildungen
+\newcommand{\longto}{\longrightarrow}
+
+% Ganze Zahlen
+\renewcommand{\div}{\,|\,}
+% \newcommand{\ddiv}{\div}
+\newcommand{\notdiv}{\,\nmid\,}
+\renewcommand{\mod}{\pmod}
+% \renewcommand{\gcd}{} % Notiere \gcd(a,b)
+\DeclareMathOperator{\gct}{ggT}
+\DeclareMathOperator{\lcm}{kgV}
+
+% Betrag und Normen
+\providecommand{\abs}[1]{\left\lvert #1 \right\rvert}
+\providecommand{\norm}[1]{\left\lVert #1 \right\rVert}
+
+% Gruppen
+\DeclareMathOperator{\ord}{ord}
+\DeclareMathOperator{\id}{id}
+\newcommand{\inv}[1]{{#1}^{-1}}
+
+% Algebra
+\newcommand{\unitsb}[1]{\left(#1\right)^\star} % Einheiten eines Rings
+\newcommand{\units}[1]{\left.#1\right.^\star}
+\newcommand{\squares}[1]{\left.#1\right.^{\star\star}}
+\DeclareMathOperator{\Char}{char}
+\newcommand{\ideal}[1]{\mathcal{#1}}
+
+\newcommand{\iso}{\simeq}
+
+\DeclareMathOperator{\Gal}{Gal}
+
+% Komplexe Zahlen
+\renewcommand{\Re}{\mathsf{Re}\,}
+\renewcommand{\Im}{\mathsf{Im}\,}
+
+% Lineare Algebra
+\newcommand{\spann}[1]{\left\langle #1 \right\rangle}
+\newcommand{\GL}[2]{\mathrm{GL}_#1(#2)}
+\DeclareMathOperator{\Rang}{Rang}
+%\DeclareMathOperator{\det}{det}
+\DeclareMathOperator{\spur}{sp}
+
+% Landau Symbole
+\renewcommand{\O}{\mathcal{O}}
+
+% Differentialrechnung
+\newcommand{\Dif}{\mathrm{D}}
+\newcommand{\D}[2]{\left(\mathrm{D} #1\right)_{#2}}
+\newcommand{\dif}{\mathrm{d}}
+\newcommand{\pdif}{\partial}
+\newcommand{\diff}[1]{\frac{\dif}{\dif #1}\,}
+\newcommand{\pdiff}[1]{\frac{\pdif}{\pdif #1}\,}
+
+% Gleichungen
+\newcommand{\force}[1]{\overset{!}{#1}}
