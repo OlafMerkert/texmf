@@ -1,0 +1,39 @@
+\usepackage{olthm}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{}
+\chead{}
+\rhead{\textit{Olaf~Merkert}, \today}
+
+\lfoot{}
+\cfoot{\thepage}
+\rfoot{}
+
+\newcommand{\loesung}[2]{%
+  \title{#1 -- Serie #2}%
+  \lhead{\textsc{#1} -- Serie #2}%
+}
+\author{Olaf~Merkert}
+
+% Gliederung nach Aufgaben
+\newcounter{aufgaben}
+
+\newenvironment{aufgabe}{%
+  \stepcounter{aufgaben}%
+  \subsection*{Aufgabe \arabic{aufgaben}}%
+}{%
+}
+
+% Zu Zeigen
+\newcommand{\zz}[1]{\stackrel{\text{zz}}{#1}}
+\newcommand{\obda}{o.B.d.A.}
+
+% Vollstaendige Induktion
+\newcommand{\ia}[1]{\noindent \textbf{IA}(#1):\quad}
+\newcommand{\is}[1]{\noindent \textbf{IS}(#1):\quad}
+\newcommand{\ian}[1]{\ia{$n = #1$}}
+\newcommand{\isn}{\is{$n \rightarrow n+1$}}
+
+\theoremstyle{remark}
+\newtheorem*{bsp}{Beispiel}
