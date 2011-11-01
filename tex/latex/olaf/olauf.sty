@@ -26,14 +26,22 @@
 }
 
 % Zu Zeigen
-\newcommand{\zz}[1]{\stackrel{\text{zz}}{#1}}
-\newcommand{\obda}{o.B.d.A.}
+\newcommand{\ZZ}{\textbf{z.z.}}
+\newcommand{\zz}[1]{\stackrel{\text{\ZZ}}{#1}}
+\newcommand{\obda}{o.B.d.A.} 
+\newcommand{\Obda}{O.B.d.A.} 
 
 % Vollstaendige Induktion
-\newcommand{\ia}[1]{\noindent \textbf{IA}(#1):\quad}
-\newcommand{\is}[1]{\noindent \textbf{IS}(#1):\quad}
-\newcommand{\ian}[1]{\ia{$n = #1$}}
+\newcommand{\ih}[1]{\noindent \textbf{IH}(#1):\enskip}
+\newcommand{\iv}[1]{\noindent \textbf{IV}(#1):\enskip}
+\newcommand{\is}[1]{\noindent \textbf{IS}(#1):\enskip}
+\newcommand{\ihn}{\ih{$n$}}
+\newcommand{\ivn}[1]{\iv{$n = #1$}}
 \newcommand{\isn}{\is{$n \rightarrow n+1$}}
 
 \theoremstyle{remark}
 \newtheorem*{bsp}{Beispiel}
+
+% Infinitesimalrechnung
+\newcommand{\folge}[2]{\left(#1\right)_{#2 \in \N}}
+\newcommand{\limn}{\lim_{n \to + \infty}}
