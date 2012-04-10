@@ -9,3 +9,10 @@
 
 
 \author{Olaf~Merkert}
+
+% in order to use this, pass the -shell-escape option to latex.
+% otherwise autogeneration does not work
+\newcommand{\gitversioninfo}{%
+  \immediate\write18{/home/olaf/texmf/tex/latex/olaf/latex-git-info.sh >| /tmp/latex-git-info.tex}%
+  \input{/tmp/latex-git-info.tex}%
+}
