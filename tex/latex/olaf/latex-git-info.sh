@@ -15,13 +15,13 @@ date=`git log -1 --format="%ci"`
 
 
 # output for LaTeX:
-print "\\\noindent {"
+print "\\\noindent"
 # print "{\\\textit{Version information:} \\\\\\"
-print "{\\\textsf{branch:}  \\\verb|$branch|} \\\quad"
-print "{\\\textsf{commit:}  \\\verb|$commit|} \\\quad"
-print "{\\\textsf{commit date:}    \\\textrm{$date}}"
+print "{\\\textsf{\\\footnotesize branch:}  \\\verb|$branch|} \\\quad"
+print "{\\\textsf{\\\footnotesize commit:}  \\\verb|$commit|} \\\\\\"
+print "{\\\textsf{\\\footnotesize commit date:}    \\\textrm{$date}}"
 
 if [[ -z "$clean" ]]; then
     print "\\\hfill \\\textbf{*}"
 fi
-print "}"
+# print "}"
