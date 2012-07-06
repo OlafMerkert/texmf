@@ -75,6 +75,17 @@
 
 % Matrizen
 \newcommand{\trans}[1]{\left.^{t} #1\right.}
+\newcommand{\mfour}[4]{%
+  \begin{pmatrix}
+    #1 & #2 \\
+    #3 & #4 \\
+  \end{pmatrix}}
+\newcommand{\mtwo}[2]{%
+  \begin{pmatrix}
+    #1 \\
+    #2 \\
+  \end{pmatrix}}
+
 
 % Landau Symbole
 \renewcommand{\O}{\mathcal{O}}
@@ -93,4 +104,3 @@
 
 % Gleichungen
 \newcommand{\force}[1]{\overset{!}{#1}}
-
