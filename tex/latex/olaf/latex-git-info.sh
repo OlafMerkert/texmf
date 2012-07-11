@@ -5,7 +5,7 @@ branch=`git branch | egrep '^\*'`
 branch=${branch/* /}
 
 # determine the current commit
-commit=`git log -1 --format=%t`
+commit=`git log -1 --format=%h`
 
 # determine whether there are pending changes
 clean=`git status | grep "working directory clean"`
