@@ -54,20 +54,48 @@
 \DeclareMathOperator{\Char}{char}
 \newcommand{\ideal}[1]{\mathcal{#1}}
 
+\newcommand{\subgr}{<}
+\newcommand{\subidl}{\vartriangleleft}
+
+% maps and properties
 \newcommand{\iso}{\simeq}
+\newcommand{\inject}{\hookrightarrow}
+\newcommand{\surject}{\twoheadrightarrow}
+\newcommand{\biject}{\leftrightarrow}
+\newcommand{\homeo}{\cong}
+
+% Commutative Algebra
+\DeclareMathOperator{\Spec}{Spec}
+\DeclareMathOperator{\Specm}{Max}
+\DeclareMathOperator{\Proj}{Proj}
+\DeclareMathOperator{\Nil}{Nil}
+
+% localisation
+\newcommand{\loc}[2]{#1^{-1} #2}
+\newcommand{\locel}[2]{#2_{#1}}
+\newcommand{\locp}[2]{#2_{#1}}
+
+% homogenous localisation
+\newcommand{\hloc}[2]{\left(#1\right)^{-1} #2}
+\newcommand{\hlocel}[2]{#2_{(#1)}}
+\newcommand{\hlocp}[2]{#2_{(#1)}}
 
 \DeclareMathOperator{\Gal}{Gal}
 
 % Polynomiale Algebra
 \DeclareMathOperator{\Disc}{disc}
 
-
 % Komplexe Zahlen
 \renewcommand{\Re}{\mathsf{Re}\,}
 \renewcommand{\Im}{\mathsf{Im}\,}
 
 % Lineare Algebra
-\newcommand{\spann}[1]{\left\langle #1 \right\rangle}
+\newcommand{\spann}[2][]{%
+  \edef\w@test{#1}%
+  \left\langle #2 \right\rangle\ifx\w@text\@empty\else_{#1}\fi}
+\newcommand{\rspann}[2][R]{#2 \, #1}
+\newcommand{\lspann}[2][R]{#1 \, #2}
+
 \newcommand{\GL}[2]{\mathrm{GL}_#1(#2)}
 \DeclareMathOperator{\Rang}{Rang}
 %\DeclareMathOperator{\det}{det}
