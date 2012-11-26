@@ -1,7 +1,9 @@
 \usepackage{olbase}
 
 \usepackage{amsmath,amssymb,amsfonts}
-\usepackage{bbm,dsfont}
+% \usepackage{dsfont}
+\usepackage{bbold}
+
 
 \usepackage{cancel} % Durchstreichen
 
@@ -9,19 +11,21 @@
 \newcommand{\strike}[1]{\xcancel{#1}}
 
 % Beweise
-\newcommand{\rprove}{\noindent $[\Rightarrow]$}
+\newcommand{\prove}[2]{\noindent $[#1 \Rightarrow #2]$}
+\newcommand{\rprove}{\prove{}{}}
 \newcommand{\lprove}{\noindent $[\Leftarrow]$}
 \newcommand{\contra}{\textbf{W!}}
 
 
 % Wichtige Mengen
-\newcommand{\N}{\ensuremath\mathbbm{N}}
-\newcommand{\Z}{\ensuremath\mathbbm{Z}}
-\newcommand{\Q}{\ensuremath\mathbbm{Q}}
-\renewcommand{\P}{\ensuremath\mathbbm{P}}
-\newcommand{\R}{\ensuremath\mathbbm{R}}
-\newcommand{\C}{\ensuremath\mathbbm{C}}
-\newcommand{\F}{\ensuremath\mathbbm{F}}
+\newcommand{\mathset}[1]{\ensuremath\mathbb{#1}}
+\newcommand{\N}{\mathset{N}}
+\newcommand{\Z}{\mathset{Z}}
+\newcommand{\Q}{\mathset{Q}}
+\renewcommand{\P}{\mathset{P}}
+\newcommand{\R}{\mathset{R}}
+\newcommand{\C}{\mathset{C}}
+\newcommand{\F}{\mathset{F}}
 
 
 % Abbildungen
@@ -44,6 +48,7 @@
 % Gruppen
 \DeclareMathOperator{\ord}{ord}
 \DeclareMathOperator{\id}{id}
+\DeclareMathOperator{\Id}{Id}
 \newcommand{\inv}[1]{{#1}^{-1}}
 
 \DeclareMathOperator{\End}{End}
