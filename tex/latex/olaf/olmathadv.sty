@@ -1,0 +1,15 @@
+\usepackage{olbase}
+\usepackage{olmath}
+
+% Derivations
+\newcommand{\derivsymbol}{\partial}
+\newcommand{\deriv}[2][]{\derivsymbol_{#1} #2}
+\newcommand{\bderiv}[2][]{\deriv[#1]{\left(#2\right)}}
+\newcommand{\logderiv}[2][]{\derivsymbol_{#1} \mathrm{log}\, #2}
+\newcommand{\blogderiv}[2][]{\logderiv[#1]{\left(#2\right)}}
+\newcommand{\fulllogderiv}[2][]{\frac{\deriv[#1]{#2}}{#2}}
+
+% Divisors and such
+\DeclareMathOperator{\Div}{div}
+\newcommand{\dipo}[1]{[#1]}
+
