@@ -17,6 +17,7 @@ date=`git log -1 --format="%ci"`
 # output for LaTeX:
 print "\\\noindent"
 # print "{\\\textit{Version information:} \\\\\\"
+print "{\\\textsf{\\\footnotesize document:} \\\texttt{\\\jobname}} \\\quad"
 print "{\\\textsf{\\\footnotesize branch:}  \\\verb|$branch|} \\\quad"
 print "{\\\textsf{\\\footnotesize commit:}  \\\verb|$commit|} \\\\\\"
 print "{\\\textsf{\\\footnotesize commit date:}    \\\textrm{$date}}"
