@@ -22,7 +22,6 @@
 \newcommand{\N}{\mathset{N}}
 \newcommand{\Z}{\mathset{Z}}
 \newcommand{\Q}{\mathset{Q}}
-\renewcommand{\P}{\mathset{P}}
 \newcommand{\R}{\mathset{R}}
 \newcommand{\C}{\mathset{C}}
 \newcommand{\F}{\mathset{F}}
@@ -60,8 +59,12 @@
 \newcommand{\unitsb}[1]{\left(#1\right)^\star} % Einheiten eines Rings
 \newcommand{\units}[1]{\left.#1\right.^\star}
 \newcommand{\squares}[1]{\left.#1\right.^{\star\star}}
+
 \DeclareMathOperator{\Char}{char}
 \newcommand{\ideal}[1]{\mathcal{#1}}
+
+\DeclareMathOperator{\trdeg}{tr.deg}
+
 
 \newcommand{\subgr}{<}
 \newcommand{\subidl}{\vartriangleleft}
@@ -150,3 +153,7 @@
 
 % Topology
 \newcommand{\closure}[1]{\overline{#1}}
+\DeclareMathOperator{\supp}{supp}
+
+% Limits
+\newcommand{\dirlim}{\underrightarrow{\lim}}
