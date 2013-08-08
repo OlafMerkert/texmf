@@ -84,13 +84,13 @@
 
 % localisation
 \newcommand{\loc}[2]{#1^{-1} #2}
-\newcommand{\locel}[2]{#2_{#1}}
-\newcommand{\locp}[2]{#2_{#1}}
+\newcommand{\locel}[2]{{#2}_{#1}}
+\newcommand{\locp}[2]{{#2}_{#1}}
 
 % homogenous localisation
 \newcommand{\hloc}[2]{\left(#1\right)^{-1} #2}
-\newcommand{\hlocel}[2]{#2_{(#1)}}
-\newcommand{\hlocp}[2]{#2_{(#1)}}
+\newcommand{\hlocel}[2]{{#2}_{(#1)}}
+\newcommand{\hlocp}[2]{{#2}_{(#1)}}
 
 \DeclareMathOperator{\Gal}{Gal}
 
@@ -111,6 +111,11 @@
 \newcommand{\dual}[1]{{#1}^{\vee}}
 
 \newcommand{\GL}[2]{\mathrm{GL}_#1(#2)}
+\newcommand{\PGL}[2]{\mathrm{PGL}_#1(#2)}
+\newcommand{\SL}[2]{\mathrm{SL}_#1(#2)}
+\newcommand{\PSL}[2]{\mathrm{PSL}_#1(#2)}
+
+
 \DeclareMathOperator{\Rang}{Rang}
 %\DeclareMathOperator{\det}{det}
 \DeclareMathOperator{\spur}{sp}
