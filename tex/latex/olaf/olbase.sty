@@ -6,7 +6,7 @@
 \usepackage{graphicx}
 \usepackage{xspace} % Intelligente Interpretation des Leerraum nach
                     % Befehlen.
-
+\usepackage{titling}
 
 \author{Olaf~Merkert}
 
@@ -20,3 +20,13 @@
 % standardised markers
 \newcommand{\todo}[1]{\textbf{TODO:} #1 \\}
 \newcommand{\TODO}[1]{\todo{#1}}
+
+% Horizontal compact title
+\newcommand{\maketitlec}{%
+  \noindent
+  {\large \theauthor}
+  \hfill
+  \textbf{\LARGE \thetitle}
+  \hfill
+  {\large \today}
+  \par}
