@@ -14,6 +14,10 @@
   \title{#1 -- Serie #2}%
   \lhead{\textsc{#1} -- Serie #2}%
 }
+\newcommand{\solution}[2]{%
+  \title{#1 -- Problem set #2}%
+  \lhead{\textsc{#1} -- Problem set #2}%
+}
 \author{Olaf~Merkert}
 
 % Gliederung nach Aufgaben
@@ -22,6 +26,11 @@
 \newenvironment{aufgabe}{%
   \stepcounter{aufgaben}%
   \subsection*{Aufgabe \arabic{aufgaben}}%
+}{%
+}
+\newenvironment{exercise}{%
+  \stepcounter{aufgaben}%
+  \subsection*{Exercise \arabic{aufgaben}}%
 }{%
 }
 
@@ -40,5 +49,5 @@
 \newcommand{\isn}{\is{$n \rightarrow n+1$}}
 
 \theoremstyle{remark}
-\newtheorem*{bsp}{Beispiel}
+% \newtheorem*{bsp}{Beispiel}
 
