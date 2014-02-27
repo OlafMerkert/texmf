@@ -1,5 +1,8 @@
 #!/bin/zsh
 
+export LC_ALL=C
+export LANG=C
+
 # determine the branch name
 branch=`git branch | egrep '^\*'`
 branch=${branch/* /}
