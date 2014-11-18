@@ -16,6 +16,15 @@
   \immediate\write18{/home/olaf/texmf/tex/latex/olaf/latex-git-info.sh >| /tmp/latex-git-info.tex}%
   \input{/tmp/latex-git-info.tex}%
 }
+\newcommand{\gitversionheader}{%
+  \usepackage{fancyhdr}%
+  \fancypagestyle{plain}%
+  \immediate\write18{/home/olaf/texmf/tex/latex/olaf/latex-git-header.sh >| /tmp/latex-git-header.tex}%
+  \fancyhf{}%
+  \input{/tmp/latex-git-header.tex}%
+  \cfoot{\thepage}%
+  \renewcommand{\headrulewidth}{0}%
+}
 
 % standardised markers
 \newcommand{\todo}[1]{\textbf{TODO:} #1 \\}
