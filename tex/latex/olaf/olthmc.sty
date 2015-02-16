@@ -7,35 +7,35 @@
 \newtheorem{satz}{Satz}[chapter]
 \newtheorem{hauptsatz}{Hauptsatz}%[chapter]
 \newtheorem*{satz*}{Satz}
-\newtheorem{hsatz}{Hilfssatz}[chapter]
 \newtheorem{thm}[satz]{Theorem}
 \newtheorem{mainthm}[hauptsatz]{Main Theorem}
 \newtheorem*{thm*}{Theorem}
 \newtheorem{lemma}{Lemma}[chapter]
+\newtheorem{hsatz}[lemma]{Hilfssatz}
 \newtheorem{kor}{Korollar}[chapter]
 
 \newcommand{\Prop}{Proposition\xspace}
-\newtheorem{prop}{\Prop}[chapter]
-\newtheorem{beh}[prop]{Behauptung}
+\newtheorem{prop}[lemma]{\Prop}
+\newtheorem{beh}[lemma]{Behauptung}
 \newtheorem{tatsache}{Tatsache}
 
 \newtheorem*{fact}{Fact}
 \newtheorem{problem}{Problem}
 
-\newtheorem{question}{Question}
+\newtheorem{question}[problem]{Question}
 \newtheorem{frage}[question]{Frage}
 
 \theoremstyle{definition}
 
-\newtheorem{defi}{Definition}[chapter]
+\newtheorem{defi}[lemma]{Definition}
 
 \theoremstyle{remark}
 
-\newtheorem{bem}{Bemerkung}[chapter]
+\newtheorem{bem}[lemma]{Bemerkung}
 \newtheorem*{bem*}{Bemerkung}
-\newtheorem{rem}[bem]{Remark}
+\newtheorem{rem}[lemma]{Remark}
 \newtheorem*{rem*}{Remark}
-\newtheorem*{remark}{Remark}
+\newtheorem{remark}[lemma]{Remark}
 \newtheorem*{remark*}{Remark}
 \newtheorem{bsp}{Beispiel}[chapter]
 \newtheorem{example}[bsp]{Example}
