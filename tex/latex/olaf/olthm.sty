@@ -7,19 +7,19 @@
 \newtheorem{satz}{Satz}
 \newtheorem{hauptsatz}{Hauptsatz}
 \newtheorem*{satz*}{Satz}
-\newtheorem{hsatz}{Hilfssatz}
 \newtheorem{thm}[satz]{Theorem}
 \newtheorem{mainthm}[hauptsatz]{Main Theorem}
 \newtheorem*{thm*}{Theorem}
 \newtheorem{lemma}{Lemma}
+\newtheorem{hsatz}[lemma]{Hilfssatz}
 \newtheorem{kor}{Korollar}
+\newtheorem{cor}[kor]{Corollary}
 
 \newcommand{\Prop}{Proposition\xspace}
 \newtheorem{prop}{\Prop}
 \newtheorem{beh}[prop]{Behauptung}
 \newtheorem{tatsache}{Tatsache}
-
-\newtheorem*{fact}{Fact}
+\newtheorem{fact}[tatsache]{Fact}
 \newtheorem{problem}{Problem}
 
 \newtheorem{question}{Question}
@@ -33,9 +33,9 @@
 
 \newtheorem*{bem}{Bemerkung}
 \newtheorem*{bem*}{Bemerkung}
-\newtheorem*{rem}{Remark}
+\newtheorem*{rem}[bem]{Remark}
 \newtheorem*{rem*}{Remark}
-\newtheorem*{remark}{Remark}
+\newtheorem*{remark}[bem]{Remark}
 \newtheorem*{remark*}{Remark}
 \newtheorem{bsp}{Beispiel}
 \newtheorem{example}[bsp]{Example}
