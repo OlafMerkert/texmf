@@ -6,7 +6,10 @@
 \usepackage{graphicx}
 \usepackage{xspace} % Intelligente Interpretation des Leerraum nach
                     % Befehlen.
-\usepackage{titling}
+
+\ifdefined\setbeamercolor{}\else{
+  \usepackage{titling}
+}\fi
 
 \author{Olaf~Merkert}
 

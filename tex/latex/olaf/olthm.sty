@@ -10,8 +10,10 @@
 \newtheorem{thm}[satz]{Theorem}
 \newtheorem{mainthm}[hauptsatz]{Main Theorem}
 \newtheorem*{thm*}{Theorem}
-\newtheorem{lemma}{Lemma}
-\newtheorem{hsatz}[lemma]{Hilfssatz}
+\ifdefined\setbeamercolor{}\else{
+  \newtheorem{lemma}{Lemma}
+  \newtheorem{hsatz}[lemma]{Hilfssatz}
+}\fi
 \newtheorem{kor}{Korollar}
 \newtheorem{cor}[kor]{Corollary}
 
@@ -19,9 +21,10 @@
 \newtheorem{prop}{\Prop}
 \newtheorem{beh}[prop]{Behauptung}
 \newtheorem{tatsache}{Tatsache}
-\newtheorem{fact}[tatsache]{Fact}
-\newtheorem{problem}{Problem}
-
+\ifdefined\setbeamercolor{}\else{
+  \newtheorem{fact}[tatsache]{Fact}
+  \newtheorem{problem}{Problem}
+}\fi
 \newtheorem{question}{Question}
 \newtheorem{frage}[question]{Frage}
 
@@ -38,7 +41,9 @@
 \newtheorem*{remark}{Remark}
 \newtheorem*{remark*}{Remark}
 \newtheorem{bsp}{Beispiel}
-\newtheorem{example}[bsp]{Example}
+\ifdefined\setbeamercolor{}\else{
+  \newtheorem{example}[bsp]{Example}
+}\fi
 
 \theoremstyle{plain}
 
