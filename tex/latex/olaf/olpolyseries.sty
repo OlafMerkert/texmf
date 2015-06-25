@@ -1,0 +1,15 @@
+% laurent series
+\newcommand{\laurent}[2]{#1(\!(#2)\!)}
+\newcommand{\laurinx}[1]{\laurent{#1}{\inv X}}
+
+% polynomial or series expressions
+\newcommand{\lseries}[3]{\sum_{#3=-#1}^{+\infty} {#2}_{-#3} \, X^{-#3}}
+% \lseries{N}{a}{n}
+\newcommand{\poly}[2]{{#2}_{#1} \, X^{#1} + \dots + {#2}_0}
+\newcommand{\monicpoly}[2]{X^{#1} + {#2}_{#1-1} \, X^{#1-1} + \dots + {#2}_0}
+\newcommand{\hompoly}[2]{{#2}_{#1} \, X^{#1} + \dots + {#2}_0 \, Z^{#1}}
+
+% valuations
+\newcommand{\io}[1]{\ios\!\left(#1\right)}
+\newcommand{\ios}{\ord}
+\newcommand{\degb}[1]{\deg\left(#1\right)}

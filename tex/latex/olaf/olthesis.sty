@@ -1,1 +1,26 @@
 % commands specific to what I use in my thesis:
+\usepackage{olmath,olalg,olalgeom}
+\usepackage{olabbrev,olpolyseries,olcontfrac,olreduction}
+
+% important domains
+\newcommand{\K}{\ensuremath \mathbb K}
+\newcommand{\HER}{\ensuremath \K[X,\sqrt{D}]}
+\newcommand{\HEF}{\ensuremath \K(X,\sqrt{D})}
+
+\newcommand{\CC}{\ensuremath\mathcal{C}}  % curve
+\newcommand{\CCa}{\CC_a} % affine curve
+\newcommand{\OO}{\ensuremath\di{O}}   % divisor at infinity
+
+\newcommand{\cfdivisor}[3]{\Delta^{#1}\left({#3}_1, \dots, {#3}_{#2}\right)}
+
+% Tate height
+\newcommand{\Th}{\hat{h}}
+\newcommand{\tH}{\hat{H}}
+
+\newcommand{\divsum}{\sum_{P \in \CC(\closure \K)}}
+
+% blocks for specialization
+\newcommand{\unboundedset}{\mathcal S}
+
+% custom commands
+\newcommand{\parity}[1]{\iota(#1)}

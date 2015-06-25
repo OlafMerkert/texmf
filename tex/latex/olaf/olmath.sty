@@ -4,7 +4,6 @@
 \usepackage{dsfont}
 % \usepackage{bbold}
 
-
 \usepackage{cancel} % Durchstreichen
 
 % Kürzen
@@ -16,6 +15,7 @@
 \newcommand{\lprove}{\noindent $[\Leftarrow]$}
 \newcommand{\contra}{\textbf{W!}}
 
+\newcommand{\corresponds}{\longleftrightarrow}
 
 % Wichtige Mengen
 \newcommand{\mathset}[1]{\ensuremath\mathbb{#1}}
@@ -46,6 +46,8 @@
 \providecommand{\gauss}[1]{\left\lfloor #1 \right\rfloor}
 \providecommand{\floor}[1]{\left\lfloor #1 \right\rfloor}
 \providecommand{\ceil}[1]{\left\ceil #1 \right\ceil}
+
+\DeclareMathOperator{\sign}{sgn}
 
 % Gruppen
 \DeclareMathOperator{\ord}{ord}
@@ -145,6 +147,8 @@
 \newcommand{\ifracBB}[2]{\left(#1\right)/\left(#2\right)}
 
 \newcommand{\fracsame}[1]{\frac{#1}{#1}}
+
+\newcommand{\invfrac}[2]{\inv{#2} \, {#1}}
 
 % Landau Symbole
 \renewcommand{\O}{\mathcal{O}}
