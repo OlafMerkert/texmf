@@ -25,6 +25,7 @@
   \clearscrheadfoot%
 }
 \newcommand{\gitversionheader}{%
+  \gitversionheaderprepare
   \immediate\write18{/home/olaf/texmf/tex/latex/olaf/latex-git-header.sh >| /tmp/latex-git-header.tex}%
   \input{/tmp/latex-git-header.tex}%
   \cfoot[\pagemark]{\pagemark}%
