@@ -5,7 +5,7 @@
 \newcommand{\powerseriesinvx}[1]{\powerseries{#1}{\inv X}}
 
 % polynomial or series expressions
-\newcommand{\lseries}[3]{\sum_{#3=+\infty}^{#1} {#2}_{#3} \, X^{#3}}
+\newcommand{\lseries}[3]{\sum_{#3=-\infty}^{#1} {#2}_{#3} \, X^{#3}}
 % \lseries{N}{a}{n}
 \newcommand{\poly}[2]{{#2}_{#1} \, X^{#1} + \dots + {#2}_0}
 \newcommand{\monicpoly}[2]{X^{#1} + {#2}_{#1-1} \, X^{#1-1} + \dots + {#2}_0}
