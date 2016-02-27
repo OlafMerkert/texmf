@@ -15,8 +15,10 @@
 \newcommand{\CCred}{\ensuremath\CC_{\mathrm{red}}}
 \newcommand{\Jacred}{\ensuremath\Jac_{\mathrm{red}}}
 
-\newcommand{\cfdivisorsingle}[2]{\Sigma^{#1}\left({#2}\right)}
-\newcommand{\cfdivisor}[3]{\cfdivisorsingle{#1}{{#3}_1, \dots, {#3}_{#2}}}
+\newcommand{\cfdivisorsingle}[2]{-(#1+1) \pd{O_-} + #1 \pd{O_+} + \pd{#2}}
+\newcommand{\cfdivisor}[3]{-(#1+#2) \pd{O_-} + #1 \pd{O_+} + \pd{#3_1} + \dots + \pd{#3_#2}}
+\newcommand{\cfdivisortranslate}[5]{-(#1+#2-#4) \pd{O_-} -\left(\pd{#5_1} + \dots + \pd{#5_#4}\right) + #1 \pd{O_+} + \pd{#3_1} + \dots + \pd{#3_#2}}
+
 
 % Tate height
 \newcommand{\Th}{\hat{h}}
