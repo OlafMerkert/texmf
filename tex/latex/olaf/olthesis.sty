@@ -31,9 +31,23 @@
 \newcommand{\Hproj}{H_{\mathrm{proj}}}
 
 \newcommand{\divsum}{\sum_{P \in \CC(\closure \K)}}
+\newcommand{\divsumred}{\sum_{R \in \CCred(\closure \k)}}
+
 
 % blocks for specialization
 \newcommand{\unboundedset}{\mathcal U}
 
 % custom commands
 \newcommand{\parity}[1]{\iota(#1)}
+
+\usepackage{caption} % a \caption* command to suppress "Table ?: " caption prefix
+
+% numbering of continued fraction examples (with reference support)
+% this is a bit more complicated because we want to use it inside of \caption commands.
+\newcounter{cfexamplenumber}
+\newcommand{\stepcfexamplenumber}{\refstepcounter{cfexamplenumber}}
+\DeclareRobustCommand{\cfexample}[1]{\stepcfexamplenumber\arabic{cfexamplenumber}\label{#1}}
+\makeatletter
+\g@addto@macro\caption@prepareslc{%
+  \renewcommand{\stepcfexamplenumber}{\caption@l@stepcounter{cfexamplenumber}}}
+\makeatother
