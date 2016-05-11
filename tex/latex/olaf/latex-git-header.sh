@@ -6,6 +6,6 @@ export LANG=C
 # determine the current commit
 commit=`git log -1 --format=%h`
 
-print "\\\ihead[\\\textsf{\\\footnotesize document:} \\\texttt{\\\jobname}]{\\\textsf{\\\footnotesize document:} \\\texttt{\\\jobname}}"
-print "\\\ohead[\\\textsf{\\\footnotesize commit:}  \\\texttt{$commit}]{\\\textsf{\\\footnotesize commit:}  \\\texttt{$commit}}"
+print "\\\ihead*{\\\textsf{\\\footnotesize document:} \\\texttt{\\\jobname}}"
+print "\\\ohead*{\\\textsf{\\\footnotesize commit:}  \\\texttt{$commit}}"
 
